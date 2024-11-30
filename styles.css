@@ -1,0 +1,174 @@
+*,
+*::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Geist+Mono:wght@100..900&family=Jaro:opsz@6..72&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Parkinsans:wght@300..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: #F15156;
+    font-family: Merriweather;
+    margin: 0;   
+    height: 100vh;
+}
+
+.header{
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+
+.to-do {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.to-do .task-name,
+.to-do .task-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.to-do label {
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.to-do .todo-input,
+.to-do #todo-description {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.todo-button {
+    background-color: #4a90e2;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    align-self: center;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.select {
+    margin-top: 10px;
+}
+
+#filter-todo {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.todo-container{
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.items{
+    margin-bottom: 20px;
+}
+
+.todo-list{
+    list-style-type: none;
+}
+
+
+h2{
+    text-align: center;
+}
+
+
+
+.task-summary {
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.task-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.task-summary p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    
+}
+
+span{
+    font-weight: bold;
+    margin-left: 1.2rem;
+}
+
+
+
+.filter-todos {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-todos h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#task-filter {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: border-color 0.3s;
+}
+
+#task-filter:focus {
+    border-color: #4a90e2;
+}
+
+#task-filter option {
+    padding: 10px;
+}

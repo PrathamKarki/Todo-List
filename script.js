@@ -75,7 +75,7 @@ function displayTasks(){
 function removeTask(index){
     tasks.splice(index, 1);
     displayTasks();
+  
 }
 
-const taskFilter = document.getElementById('task-filter');
 
